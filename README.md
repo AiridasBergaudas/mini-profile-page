@@ -2,7 +2,7 @@
 ***
 ***html + css***
 
-responsive web design - max with flex / min with media
+responsive web design - max flex / min media
 
 - Deployment link (in the future) :) 
 - Date 2022 / 11 / 17
