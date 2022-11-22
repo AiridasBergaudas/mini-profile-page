@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matavimo Vienetai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="unit_main">
+        <div class="wrapper">
+            <h1>Matavimo vienetai</h1>
+            <hr>
+
+            <ul class="units_list">
+                <li><b>px</b> - pikseliai (Absoliutus bazinis matavimo vienetas</li>
+                font-size paveldimas palikuonių
+                browserio pagal nutylėjimą šrifto dydis 16px
+
+                <li><b>EM</b> - (realityvus dydis skaičiuojamas esamo arba paveldėto dydžio atžvilgiu</li>
+                <li><b>REM</b> - (realityvus dydis atsižvelgiantis html žymę ar browserio šrifto dydį</li>
+                <li><b>%</b> - procentai </li>
+                <li><b>vw</b> - realituvus ekrano pločiui</li>
+                <li><b>vh</b>- realituvus ekrano aukščiui</li>
+                <li><b>vmin</b> - realituvus ekrano aukščiui arba pločiui -žiūrint kuris mažesnis</li>
+                <li><b>vmax</b> - realituvus ekrano aukščiui arba pločiui -žiūrint kuris didesnis</li>
+            </ul>
+
+            <div class="pirmas">
+                Pirmadienis (paveldi pagal nutyleijimą browserio šriftą 16px)
+                <div class="antras" style="font-size: 20px;">
+                    Antradienis (nurodomas šrifto dydis 20px)
+                    <div class="trecias" style="font-size: 17.5px;">
+                        Trečiadienis (nurodomas šrifto dydis 17.5px)
+
+                        <div class="ket1">Ketvirtadienis (paveldimas šrifto dydis 17.5px) </div>
+                        <div class="ket1 " style="font-size: 14.5px;">Penktadienis (nurodomas šrifto dydis
+                            14.5px)</div>
+                        <div class="ket1 " style="font-size: 25px;">Savaitgalis (nurodomas šrifto dydis
+                            25px)</div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <hr>
+            <div class="pirmas">
+                Pirmadienis (paveldi pagal nutyleijimą browserio šriftą 16px)
+                <div class="antras" style="font-size: 1em;">
+                    Antradienis (nurodomas šrifto dydis 1em = 16px)
+                    <div class="trecias" style="font-size: 1.5em;">
+                        Trečiadienis (nurodomas šrifto dydis 1.5em * 16 = 24px)
+
+                        <div class="ket1">Ketvirtadienis (nėra nurodyta, todėl paveldimas šrifto dydis 1.5em * 16 =
+                            24px) </div>
+                        <div class="ket1" style="font-size: 1.5em;">Penktadienis (nurodomas šrifto dydis
+                            1.5 em * 24px = 36px)</div>
+                        <div class="ket1" style="font-size: 0.8em;">Savaitgalis (nurodomas šrifto dydis
+                            0.8em * 24 = 19.2px)</div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <hr>
+            <ul>
+                <li>Pirmas </li>
+                <li>Pirmas
+                    <ul>
+                        <li>Antras</li>
+                        <li>Antras
+                            <ul>
+                                <li>Trečias</li>
+                                <li>Trečias</li>
+                                <li>Trečias</li>
+                            </ul>
+                        </li>
+                        <li>Antras</li>
+                        <li>Antras</li>
+                    </ul>
+                </li>
+                <li>Pirmas </li>
+                <li>Pirmas </li>
+            </ul>
+
+            <hr>
+            <hr>
+            <div class="pirmas">
+                Pirmadienis (paveldi pagal nutyleijimą browserio šriftą 16px)
+                <div class="antras" style="font-size: 1rem;">
+                    Antradienis (nurodomas šrifto dydis 1rem = 16px)
+                    <div class="trecias" style="font-size: 1.5rem;">
+                        Trečiadienis (nurodomas šrifto dydis 1.5rem * 16 = 24px)
+
+                        <div class="ket1">Ketvirtadienis (nėra nurodyta, todėl paveldimas šrifto dydis 1.5rem * 16 =
+                            24px) </div>
+                        <div class="ket1" style="font-size: 1.5rem;">Penktadienis (nurodomas šrifto dydis
+                            1.5 rem * 16px = 24px)</div>
+                        <div class="ket1" style="font-size: 0.8rem;">Savaitgalis (nurodomas šrifto dydis
+                            0.8rem * 16 = 12.8px)</div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <hr>
+            <div class="pirmas">
+                Pirmadienis (paveldi pagal nutyleijimą browserio šriftą 16px)
+                <div class="antras" style="font-size: 100%;">
+                    Antradienis (nurodomas šrifto dydis 100% = 16px)
+                    <div class="trecias" style="font-size: 150%;">
+                        Trečiadienis (nurodomas šrifto dydis 16/100*150%  = 24px)
+
+                        <div class="ket1">Ketvirtadienis (nėra nurodyta, todėl paveldimas šrifto dydis 16/100*150%  = 24px) </div>
+                        <div class="ket1" style="font-size: 150%;">Penktadienis (nurodomas šrifto dydis
+                             = )</div>
+                        <div class="ket1" style="font-size: 80%;">Savaitgalis (nurodomas šrifto dydis
+                            = )</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="paskaita">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

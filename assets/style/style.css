@@ -288,3 +288,142 @@ footer style
     color: #98cb00;
     text-decoration: none;
 }
+
+
+
+/* 
+-----------------------------
+units page
+-----------------------------
+*/
+
+.unit_main{
+min-height: 100vh;
+padding: 50px 0;
+background: #E5E6E9;
+/* background: -webkit-linear-gradient(top left, #E5E6E9, #C9EEC3);
+background: -moz-linear-gradient(top left, #E5E6E9, #C9EEC3);
+background: linear-gradient(to bottom right, #E5E6E9, #C9EEC3); */
+line-height: 2;
+}
+
+@media screen and (min-width: 480px) and (max-width: 900px) {
+    .unit_main{
+        background-color: #98cb00;
+    }
+    .text {
+        color: #3398cc;
+    }
+  
+}
+
+
+
+
+
+.unit_main h1, hr{
+    margin-bottom: 20px;
+}
+
+.units_list {
+    margin: 30px 20px;
+}
+.pirmas, .antras, .trecias, .ket1 {
+    padding: 30px;
+    border: 1px solid black;
+}
+.pirmas{
+    background-color: #C9EEC3;
+}
+.antras{
+    background-color: #999999;
+}
+.trecias{
+    background-color: antiquewhite;
+}
+
+
+.ket1{
+    background-color:gray;
+    color:#fff;
+}
+
+ul li {
+    font-size: 1.5em;
+}
+
+/* Pseudo elementai */
+
+.text {
+    line-height: 1.5;
+    font-size: 24px;
+}
+
+.text::first-line{
+    color:red;
+    font-size: 30px;
+}
+
+.first::first-letter{
+    color: #98cb00;
+    font-size: 60px;
+}
+
+ul li{
+    font-size: 24px;
+    list-style-type: none;
+    position: relative;
+    cursor: pointer;
+}
+
+ul li::after {
+    content: "♥";
+    /* width: 25px;
+    height: 25px; */
+    position: absolute;
+    color: red;
+    font-size: 35px;
+    top: -12px;
+    left: -40px;
+    /* background-color: #3398cc; */
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+ul li:hover:after{
+    /*background-color:#cc6733;
+    */transform: scale(2) rotate(-45deg);
+ 
+}
+
+.left {
+    padding-left: 30px;
+    position: relative;
+}
+
+.left::before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 70%;
+    background-color: #cc6733;
+    top: 15%;
+    left: -20px;
+}
+
+.paskaita {
+    margin: 50px;
+    height: 50vh;
+    background-color: #cc6733;
+    width: 50vmin;
+}
+
+
